@@ -1,0 +1,98 @@
+# ===================================================================
+# 这是一个为 C/C++ 项目准备的通用 .gitignore 文件
+# 原则：只提交源代码和构建说明，不提交由它们生成的文件。
+# ===================================================================
+
+# 编译产物 (Object files, Executables, Libraries)
+# -------------------------------------------------------------------
+# 目标文件
+*.o
+*.obj
+*.lo
+
+# 预编译头文件
+*.gch
+*.pch
+
+# 静态库文件
+*.a
+*.lib
+
+# 动态库/共享库文件 (Linux, Mac, Windows)
+*.so
+*.dll
+*.dylib
+
+# 可执行文件 (Windows and Linux/Mac)
+*.exe
+*.out
+*.app
+# 如果你的可执行文件没有后缀，可以在这里加上它的名字，例如:
+# my_program
+
+# 调试相关文件
+# -------------------------------------------------------------------
+*.dSYM/
+*.su
+*.idb
+*.pdb
+core
+*.core
+
+# 构建系统和目录
+# -------------------------------------------------------------------
+# 强烈建议将所有编译输出都放在一个独立的目录中，比如 build 或 bin
+/build/
+/bin/
+/obj/
+/out/
+
+# CMake 生成的文件
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+Makefile
+
+# Autotools 生成的文件
+/autom4te.cache/
+/configure
+/config.status
+/config.log
+
+# IDE 和编辑器配置文件
+# -------------------------------------------------------------------
+# Visual Studio Code
+.vscode/
+
+# CLion / JetBrains
+.idea/
+
+# Eclipse
+.cproject
+.project
+.settings/
+
+# Code::Blocks
+*.cbp
+*.depend
+*.layout
+
+# Vim / Emacs 临时文件
+*~
+*.swp
+*.swo
+.#*
+
+# 操作系统生成的文件
+# -------------------------------------------------------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# 日志文件
+# -------------------------------------------------------------------
+*.log
