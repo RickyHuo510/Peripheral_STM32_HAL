@@ -19,5 +19,6 @@
  * */
 
 int __io_putchar(int ch);
+//void long_uart_printf(char*);
 
 #endif /* SYS_H_ */

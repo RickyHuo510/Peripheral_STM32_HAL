@@ -2372,9 +2372,9 @@ void LCD_ShowString(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uin
     width += x;
     height += y;
 
-    while ((*p <= '~') && (*p >= ' '))   //判断是不是非法字符!
+    while (((*p <= '~') && (*p >= ' '))||(*p=='\n')||(*p=='\r'))   //判断是不是非法字符!
     {
-        if (x >= width)
+        if ( (x >= width) || (*p=='\n')|| (*p=='\r') )
         {
             x = x0;
             y += size;

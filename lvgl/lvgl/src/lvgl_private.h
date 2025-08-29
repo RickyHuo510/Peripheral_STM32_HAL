@@ -13,7 +13,7 @@ extern "C" {
 /*********************
  *      INCLUDES
  *********************/
-//#include "../lvgl_private.h"
+#include "src/lvgl_private.h"
 
 /*********************
  *      DEFINES
